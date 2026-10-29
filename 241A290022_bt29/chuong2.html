@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chương 2 - JavaLearn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Java<span>Learn</span></div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="chuong1.html">Chương 1</a>
+        <a href="chuong2.html" class="active">Chương 2</a>
+        <a href="baitap.html">Bài tập thực hành</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Chương 2: Cấu trúc điều khiển</h1>
+      <h2>Phần Lý thuyết</h2>
+      <h3>1. Câu lệnh if - else</h3>
+      <pre>
+int diem = 8;
+if (diem &gt;= 5) {
+    System.out.println("Đậu");
+} else {
+    System.out.println("Rớt");
+}</pre
+      >
+      <h3>2. Vòng lặp for</h3>
+      <pre>
+for (int i = 1; i &lt;= 5; i++) {
+    System.out.println(i);
+}</pre
+      >
+
+      <h2>Phần Bài tập</h2>
+      <div class="card">
+        <span class="level l1">Dễ</span><strong>Bài 1:</strong> Kiểm tra số n =
+        10 là chẵn hay lẻ.
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>
+int n = 10;
+if (n % 2 == 0) System.out.println("Chẵn");
+else System.out.println("Lẻ");</pre
+          >
+        </details>
+      </div>
+      <br />
+      <div class="card">
+        <span class="level l2">Trung bình</span><strong>Bài 2:</strong> In các
+        số từ 1 đến 10.
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>for (int i = 1; i &lt;= 10; i++) System.out.println(i);</pre>
+        </details>
+      </div>
+      <br />
+      <div class="card">
+        <span class="level l3">Khá khó</span><strong>Bài 3:</strong> Tính tổng
+        các số từ 1 đến 100.
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>
+int s = 0;
+for (int i = 1; i &lt;= 100; i++) s += i;
+System.out.println(s);</pre
+          >
+        </details>
+      </div>
+      <br />
+      <div class="card">
+        <span class="level l4">Khó</span><strong>Bài 4:</strong> Kiểm tra n = 17
+        có phải số nguyên tố không.
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>
+int n = 17;
+boolean nt = n &gt; 1;
+for (int i = 2; i &lt;= Math.sqrt(n); i++) {
+    if (n % i == 0) { nt = false; break; }
+}
+System.out.println(nt ? "Số nguyên tố" : "Không phải");</pre
+          >
+        </details>
+      </div>
+    </main>
+    <footer>© 2026 JavaLearn - Website hỗ trợ dạy học Lập trình Java</footer>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài tập thực hành - JavaLearn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Java<span>Learn</span></div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="chuong1.html">Chương 1</a>
+        <a href="chuong2.html">Chương 2</a>
+        <a href="baitap.html" class="active">Bài tập thực hành</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Bài tập thực hành</h1>
+      <h2>Phân quyền</h2>
+      <form class="card">
+        <label for="vaitro">Bạn đăng nhập với vai trò:</label>
+        <select id="vaitro">
+          <option>Sinh viên</option>
+          <option>Giáo viên</option>
+        </select>
+      </form>
+
+      <h2>Dành cho Giáo viên</h2>
+      <div class="grid">
+        <form class="card">
+          <h3>Tạo bài tập</h3>
+          <label>Tên bài tập</label
+          ><input type="text" placeholder="Ví dụ: Tính tổng hai số" />
+          <label>Mức độ</label>
+          <select>
+            <option>Dễ</option>
+            <option>Trung bình</option>
+            <option>Khó</option>
+          </select>
+          <label>Đề bài</label><textarea></textarea>
+          <label>Bộ test 1 (đúng = 2 điểm)</label
+          ><input type="text" placeholder="Input / Output mong đợi" />
+          <label>Bộ test 2</label><input type="text" /> <label>Bộ test 3</label
+          ><input type="text" /> <label>Bộ test 4</label><input type="text" />
+          <label>Bộ test 5</label><input type="text" /><br />
+          <button class="btn" type="submit">Lưu bài tập</button>
+        </form>
+        <form class="card">
+          <h3>Chọn đề cho Kiểm tra / Thi</h3>
+          <label>Phần Kiểm tra (chọn 1 bài)</label>
+          <select>
+            <option>Bài 1 - Dễ</option>
+            <option>Bài 2 - Trung bình</option>
+            <option>Bài 3 - Khó</option>
+          </select>
+          <label>Phần Thi (chọn 2 đến 3 bài)</label>
+          <div class="radio">
+            <label><input type="checkbox" /> Bài 1 - Dễ</label>
+            <label><input type="checkbox" /> Bài 2 - Trung bình</label>
+            <label><input type="checkbox" /> Bài 3 - Khó</label>
+          </div>
+          <br />
+          <button class="btn" type="submit">Lưu danh sách</button>
+        </form>
+      </div>
+
+      <h2>Dành cho Sinh viên</h2>
+      <form class="card">
+        <h3>Thông tin</h3>
+        <label>Họ tên</label><input type="text" placeholder="Nguyễn Văn A" />
+        <label>Mã SV</label><input type="text" placeholder="Mã sinh viên" />
+        <label>Chọn phần</label>
+        <div class="radio">
+          <label><input type="radio" name="phan" checked /> Kiểm tra</label>
+          <label><input type="radio" name="phan" /> Thi</label>
+        </div>
+        <label>Chọn bài</label>
+        <select>
+          <option>Bài 1 - Dễ</option>
+          <option>Bài 2 - Trung bình</option>
+          <option>Bài 3 - Khó</option>
+        </select>
+        <label>Lời giải (code Java)</label
+        ><textarea placeholder="Nhập code Java tại đây..."></textarea><br />
+        <button class="btn" type="submit">Nộp bài</button>
+      </form>
+
+      <h2>Chấm điểm trực tiếp</h2>
+      <table>
+        <tr>
+          <th>Mã SV</th>
+          <th>Họ tên</th>
+          <th>Bài</th>
+          <th>Test đúng</th>
+          <th>Điểm</th>
+        </tr>
+        <tr>
+          <td>SV001</td>
+          <td>Nguyễn Văn A</td>
+          <td>Bài 1</td>
+          <td>4 / 5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>SV002</td>
+          <td>Trần Thị B</td>
+          <td>Bài 2</td>
+          <td>5 / 5</td>
+          <td>10</td>
+        </tr>
+      </table>
+    </main>
+    <footer>© 2026 JavaLearn - Website hỗ trợ dạy học Lập trình Java</footer>
+  </body>
+</html>

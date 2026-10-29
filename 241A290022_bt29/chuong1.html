@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chương 1 - JavaLearn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Java<span>Learn</span></div>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="chuong1.html" class="active">Chương 1</a>
+        <a href="chuong2.html">Chương 2</a>
+        <a href="baitap.html">Bài tập thực hành</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Chương 1: Làm quen với Java</h1>
+      <h2>Phần Lý thuyết</h2>
+      <h3>1. Java là gì?</h3>
+      <p>
+        Java là ngôn ngữ lập trình hướng đối tượng, chạy trên nhiều hệ điều hành
+        nhờ máy ảo JVM.
+      </p>
+      <h3>2. Chương trình đầu tiên</h3>
+      <pre>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}</pre
+      >
+      <h3>3. Biến và kiểu dữ liệu</h3>
+      <table>
+        <tr>
+          <th>Kiểu</th>
+          <th>Ý nghĩa</th>
+          <th>Ví dụ</th>
+        </tr>
+        <tr>
+          <td>int</td>
+          <td>Số nguyên</td>
+          <td>int tuoi = 20;</td>
+        </tr>
+        <tr>
+          <td>double</td>
+          <td>Số thực</td>
+          <td>double diem = 8.5;</td>
+        </tr>
+        <tr>
+          <td>boolean</td>
+          <td>Đúng / sai</td>
+          <td>boolean dau = true;</td>
+        </tr>
+        <tr>
+          <td>String</td>
+          <td>Chuỗi ký tự</td>
+          <td>String ten = "Quý";</td>
+        </tr>
+      </table>
+
+      <h2>Phần Bài tập</h2>
+      <div class="card">
+        <span class="level l1">Dễ</span><strong>Bài 1:</strong> In ra dòng chữ
+        "Xin chào Java".
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>System.out.println("Xin chào Java");</pre>
+        </details>
+      </div>
+      <br />
+      <div class="card">
+        <span class="level l2">Trung bình</span><strong>Bài 2:</strong> Tính
+        tổng hai số nguyên a = 5 và b = 7.
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>
+int a = 5, b = 7;
+System.out.println(a + b);</pre
+          >
+        </details>
+      </div>
+      <br />
+      <div class="card">
+        <span class="level l3">Khá khó</span><strong>Bài 3:</strong> Tính chu vi
+        và diện tích hình chữ nhật có chiều dài 8, chiều rộng 5.
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>
+double d = 8, r = 5;
+System.out.println("Chu vi: " + 2 * (d + r));
+System.out.println("Diện tích: " + d * r);</pre
+          >
+        </details>
+      </div>
+      <br />
+      <div class="card">
+        <span class="level l4">Khó</span><strong>Bài 4:</strong> Đổi nhiệt độ từ
+        độ C sang độ F với C = 37 (F = C × 9/5 + 32).
+        <details>
+          <summary>Xem lời giải</summary>
+          <pre>
+double c = 37;
+double f = c * 9 / 5 + 32;
+System.out.println(f);</pre
+          >
+        </details>
+      </div>
+    </main>
+    <footer>© 2026 JavaLearn - Website hỗ trợ dạy học Lập trình Java</footer>
+  </body>
+</html>
